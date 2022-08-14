@@ -28,11 +28,11 @@ const ViewJob = ({ selectedJob }) => {
             </div>
             <div className="job-description">
                 <h2 className="heading mb-5">Job Description</h2>
-                {selectedJob?.jobDesc?.map(({ heading, text }) => (
-                    <>
+                {selectedJob?.jobDesc?.map(({ heading, text }, key) => (
+                    <div key={key}>
                     <h2 className="heading">{heading}</h2>
                     <p>{text}</p>
-                    </>
+                    </div>
                 ))}
             </div>
 

@@ -15,8 +15,8 @@ const LeftCol = ({ data, setSelectedJob, selectedJob, sortByFeatured, displayJob
             <div className="job-count">
                 {displayJobs.length} Jobs Found
             </div>
-            {data.map((job) => (
-                <Job data={displayJobs} job={job} setSelectedJob={setSelectedJob} selectedJob={selectedJob} />
+            {data.map((job, key) => (
+                <Job key={key} data={displayJobs} job={job} setSelectedJob={setSelectedJob} selectedJob={selectedJob} />
             ))}
         </div>
     )
