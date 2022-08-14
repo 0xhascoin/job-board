@@ -1,0 +1,38 @@
+.left-col-container {
+    // border: 1px solid black;
+
+    .filter-container {
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px;
+        background-color: white;
+        border-radius: 4px;
+
+        .button {
+            width: 33%;
+            font-size: .9rem;
+            color: gray;
+            font-weight: 400;
+            border: none;
+            transition: all ease-in-out .4s;
+            margin-right: 2px;
+            height: 40px;
+
+            &:hover, &.selected {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .job-count {
+        // border: 1px solid black;
+        margin-top: 20px;
+        padding: .5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+    }
+}

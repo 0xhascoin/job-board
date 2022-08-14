@@ -1,0 +1,31 @@
+.right-col-container {
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px;
+        background-color: white;
+        border-radius: 4px;
+
+        .input {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            font-size: .9rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+* {
+    outline: none !important;
+}
